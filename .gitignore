@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Spark (RA2): pastas de execução, recriadas a cada rodada
+dados/streaming/*
+!dados/streaming/README.md
+spark-warehouse/
+metastore_db/
+derby.log
+checkpoint/
+
+# Arquivos temporários do Word e do LibreOffice
+~$*.docx
+.~lock.*#
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Configuração pessoal do Claude Code (a do grupo fica em .claude/settings.json)
+.claude/settings.local.json

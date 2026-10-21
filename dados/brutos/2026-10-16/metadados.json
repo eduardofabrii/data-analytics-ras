@@ -1,0 +1,53 @@
+{
+  "inicio_utc": "2026-10-16T21:03:16+00:00",
+  "fim_utc": "2026-10-16T21:41:09+00:00",
+  "url_api": "https://api.deezer.com",
+  "pais_aparente": "US",
+  "endpoints": [
+    "/infos",
+    "/genre",
+    "/chart/{id}/tracks",
+    "/track/{id}",
+    "/album/{id}",
+    "/artist/{id}"
+  ],
+  "parametros": {
+    "limit": 100,
+    "teto_por_chart": 300,
+    "pausa_s": 0.15,
+    "tentativas": 4,
+    "timeout_s": 20
+  },
+  "chamadas": 6591,
+  "chamadas_por_endpoint": {
+    "/infos": 1,
+    "/genre": 1,
+    "/chart/{id}/tracks": 28,
+    "/track/{id}": 2581,
+    "/album/{id}": 2292,
+    "/artist/{id}": 1688
+  },
+  "novas_tentativas": 0,
+  "quantidade_erros": 0,
+  "erros": [],
+  "charts": 28,
+  "itens_chart": 2800,
+  "faixas_unicas": 2581,
+  "albuns_unicos": 2292,
+  "artistas_unicos": 1688,
+  "arquivos": [
+    "albuns.json",
+    "artistas.json",
+    "charts.json",
+    "faixas.json",
+    "generos.json",
+    "infos.json",
+    "metadados.json"
+  ],
+  "ambiente": {
+    "python": "3.13.16",
+    "pandas": "2.3.3",
+    "requests": "2.34.2",
+    "colab": false
+  }
+}
