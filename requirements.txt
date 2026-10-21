@@ -1,7 +1,6 @@
-# Bibliotecas do projeto (ADR-0006). Python 3.9 ou mais novo.
-# Versões conferidas em 16/10/2026 numa instalação limpa deste arquivo (T05): Python 3.13.16,
-# pandas 2.3.3, requests 2.34.2, pyspark 4.0.3, jupyter 1.1.1, nbconvert 7.17.2,
-# python-docx 1.2.0 e pypdf 6.21.0. As versões da execução final vão no documento do RA1, seção 06 (T13).
+# Bibliotecas do projeto. Python 3.9 ou mais novo.
+# Versões conferidas numa instalação limpa: pandas 2.3.3, requests 2.34.2, pyspark 4.0.3,
+# jupyter 1.1.1 e nbconvert 7.17.2.
 
 # RA1: coleta, exploração e preparação
 pandas>=2.2,<3
@@ -10,12 +9,6 @@ requests>=2.31
 # RA2: processamento em streaming (precisa de Java 17 ou mais novo)
 pyspark==4.0.3
 
-# Execução local do notebook e PDF do RA2
+# Execução local do notebook
 jupyter>=1.0
-nbconvert[webpdf]>=7.16
-
-# Geração do documento do RA1 a partir do template .docx
-python-docx>=1.1
-
-# PDF único da entrega (documento do RA1 + notebook)
-pypdf>=4.0
+nbconvert>=7.16
